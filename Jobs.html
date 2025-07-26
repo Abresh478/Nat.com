@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+}
+
+.active, .accordion:hover {
+  background-color: #ccc; 
+}
+
+.panel {
+  padding: 0 18px;
+  display: none;
+  background-color: white;
+  overflow: hidden;
+}
+body{background-image:url(1748427988101.png);background-size:150% 150%;}
+</style>
+</head>
+<body>
+
+<h2>Jobs</h2>
+
+<button class="accordion">New Job In<br> Fullstack Development</button>
+<div class="panel">
+  <p>The open AI is currently seeking a software Engineer,Full stack to join their team in san Francisco.
+  <br>
+  This role offers a comptitive annual salary ranging from $80,000 - $120,000,along with equity and comphresive benefits.<br>
+  key Responsibility :<br>
+  Develop new customer-facing Features and product experiance for ChatGpt and the opean AI API .<br>
+  Desired Qualification :<br>
+  At least 5 years of relavent engineer and in tech and product-driven componeis. <br>
+  proficinal in JS ,React and other web tecnology.
+  <br><br>
+  If you're interested on this opportuinity apply through https://Ai.com/apply</p>
+</div>
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
+    } else {
+      panel.style.display = "block";
+    }
+  });
+}
+</script>
+
+</body>
+</html>
